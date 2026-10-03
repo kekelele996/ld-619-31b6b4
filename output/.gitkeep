@@ -1,0 +1,1 @@
+# 运行产物目录：mask-cli 的 --output 与 report 默认写入这里，容器内以命名卷 cli_output 挂载到 /app/output。

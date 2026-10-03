@@ -1,7 +1,8 @@
 node_modules/
 dist/
 build/
-output/
+output/*
+!output/.gitkeep
 .env
 .DS_Store
 *.log
