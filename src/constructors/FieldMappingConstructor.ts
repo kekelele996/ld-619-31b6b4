@@ -1,0 +1,1 @@
+export const createFieldMapping = (overrides = {}) => ({ id: 1, job_id: 1, source_field: "source field 1", detected_type: "JSON", rule_id: 1, sample_before: "sample before 1", sample_after: "sample after 1", ...overrides });

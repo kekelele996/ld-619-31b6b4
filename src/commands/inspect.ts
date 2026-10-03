@@ -1,0 +1,1 @@
+import { Command } from "commander"; import { readText } from "../utils/file"; import { parseCsv } from "../parsers/csvParser"; export const inspectCommand = new Command("inspect").requiredOption("--input <path>").option("--sample <n>", "sample", "20").action((opts) => { console.log(parseCsv(readText(opts.input)).slice(0, Number(opts.sample))); });

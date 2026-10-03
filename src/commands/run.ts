@@ -1,0 +1,1 @@
+import { Command } from "commander"; import { runMask } from "../services/maskService"; export const runCommand = new Command("run").requiredOption("--input <path>").requiredOption("--output <path>").option("--profile <name>", "profile", "default").action((opts) => { console.log(runMask(opts.input, opts.output)); });

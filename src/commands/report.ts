@@ -1,0 +1,1 @@
+import { Command } from "commander"; import { writeReport } from "../services/reportService"; export const reportCommand = new Command("report").requiredOption("--job <jobId>").option("--format <format>", "format", "markdown").action((opts) => console.log(writeReport(opts.job, opts.format))); 

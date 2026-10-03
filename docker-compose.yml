@@ -1,0 +1,13 @@
+name: mask-cli
+services:
+  cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-mask-cli}-cli
+    env_file:
+      - .env
+    volumes:
+      - cli_output:/app/output
+volumes:
+  cli_output:

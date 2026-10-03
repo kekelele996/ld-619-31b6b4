@@ -1,0 +1,1 @@
+import { maskPartial } from "../utils/formatters"; export function maskValue(field: string, value: string) { if (/phone/i.test(field)) return "139" + Math.floor(10000000 + Math.random()*89999999); if (/name/i.test(field)) return "用户" + value.length; if (/id|email/i.test(field)) return maskPartial(value); return value; }

@@ -1,0 +1,1 @@
+import { Command } from "commander"; export const rulesCommand = new Command("rules").command("add").requiredOption("--field <field>").requiredOption("--strategy <strategy>").action((opts) => console.log({ added: opts }));

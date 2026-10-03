@@ -1,0 +1,1 @@
+export function parseCsv(text: string) { const [head, ...rows] = text.trim().split(/\r?\n/); const headers = head.split(","); return rows.map((row) => Object.fromEntries(row.split(",").map((cell, i) => [headers[i], cell]))); }

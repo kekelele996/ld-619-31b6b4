@@ -1,0 +1,1 @@
+export const createAuditReport = (overrides = {}) => ({ id: 1, job_id: 1, total_rows: "total rows 1", masked_fields: "masked fields 1", skipped_fields: "skipped fields 1", warning_count: "warning count 1", report_path: "report path 1", ...overrides });

@@ -1,0 +1,1 @@
+import fs from "node:fs"; export const readText = (file: string) => fs.readFileSync(file, "utf8"); export const writeText = (file: string, text: string) => { fs.mkdirSync(file.split("/").slice(0,-1).join("/") || ".", { recursive: true }); fs.writeFileSync(file, text); };

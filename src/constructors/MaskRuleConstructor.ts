@@ -1,0 +1,1 @@
+export const createMaskRule = (overrides = {}) => ({ id: 1, field_pattern: "field pattern 1", strategy: "strategy 1", salt_key: "salt key 1", keep_prefix: "keep prefix 1", keep_suffix: "keep suffix 1", enabled: false, ...overrides });

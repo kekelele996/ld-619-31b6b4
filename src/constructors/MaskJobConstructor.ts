@@ -1,0 +1,1 @@
+export const createMaskJob = (overrides = {}) => ({ id: 1, input_path: "input path 1", output_path: "output path 1", profile_name: "profile name 1", file_type: "JSON", job_status: "RUNNING", started_at: "2026-06-11T09:00:00Z", finished_at: "2026-06-11T09:00:00Z", ...overrides });

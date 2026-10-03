@@ -1,0 +1,1 @@
+import { writeText } from "../utils/file"; export function writeReport(jobId: string, format = "markdown") { const body = format === "json" ? JSON.stringify({ jobId, status: "SUCCESS" }, null, 2) : `# Audit Report\n\n- Job: ${jobId}\n- Status: SUCCESS\n`; writeText(`output/report-${jobId}.${format === "json" ? "json" : "md"}`, body); return body; }

@@ -1,0 +1,1 @@
+export const LOG_TEMPLATES = { MaskJob: ["job.create","job.run","job.finish","job.report"], MaskRule: ["rule.add","rule.edit","rule.disable","rule.export"], FieldMapping: ["field.detect","field.map","field.skip","field.report"], AuditReport: ["report.create","report.write","report.export","report.archive"] };
